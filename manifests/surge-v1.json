@@ -1,0 +1,27 @@
+{
+  "algo_id": "surge-v1",
+  "schema_version": "1",
+  "sources": {
+    "typescript_files": [
+      "engine/src/types.ts",
+      "engine/src/strategies/flow.ts",
+      "engine/src/indicators/sma.ts",
+      "engine/src/indicators/ema.ts",
+      "engine/src/indicators/atr.ts",
+      "engine/src/indicators/donchian.ts",
+      "engine/src/indicators/percentile.ts"
+    ],
+    "typescript_canonical_format": "Files concatenated in listed order with '\\n--FILE--\\n<path>\\n--CONTENT--\\n<body>' delimiter, then SHA-256.",
+    "typescript_role": "Production code on VPS. This is what fires live signals. Verify ts_sha256 below to confirm the live engine matches the published fingerprint.",
+    "pine_specification_file": "fire/pressure/algos/surge/strategy.pine",
+    "pine_specification_role": "Canonical strategy specification. Used for walk-forward backtest in TradingView. Not live production code. Preserved as design reference only."
+  },
+  "current": {
+    "effective_from": "2026-05-23T09:54:21.379Z",
+    "ts_sha256": "6fb0876e0d75e075964aa1e3131057b3b39bb05eb680472c98abfaf65f8ccfe2",
+    "ts_byte_length": 28614,
+    "main_repo_commit": "b38c96e99f9ce84ae658a858280d8db309d2a1f0",
+    "notes": "TypeScript engine on VPS is the sole live signal source. Same engine code is shared across vent/flow/surge; per-algo behavior is controlled by *_DEFAULTS in types.ts. Runtime fetches OHLCV from api.binance.com global via VPS in Frankfurt. Only POSTs from the VPS IP (68.183.209.158) are accepted by the firelog webhook (FIRELOG_ALLOW_VPS_ONLY enforced)."
+  },
+  "history": []
+}
