@@ -1,1 +1,2 @@
 EXIT  1d64c8ae-41da-4e52-8650-71720e642477  vent-v1  BINANCE:BTCUSD  exit_price=59947.99  exit_reason=trailing_stop  realized_r=0.1154  2026-07-02T00:00:08.572Z
+EXIT  f525928d-4c43-4acb-9317-7c4982992738  flow-v1  BINANCE:ETHUSD  exit_price=1608.62  exit_reason=trailing_stop  realized_r=0.6252  2026-07-02T00:00:11.686Z
