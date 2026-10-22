@@ -1,1 +1,2 @@
 EXIT  a29e9221-bed0-4922-b308-087966721970  vent-v1  BINANCE:BTCUSD  exit_price=82087.37999999999  exit_reason=initial_stop  realized_r=-1.2628  2026-10-22T08:00:08.130Z
+EXIT  0e8913e1-5f74-466b-8598-e1d326b3a052  flow-v1  BINANCE:ETHUSD  exit_price=2397.64  exit_reason=initial_stop  realized_r=-1.1450  2026-10-22T12:00:07.075Z
